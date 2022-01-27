@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="saisie.php" method="POST">
+    <input type="hidden" Name="nom" value= "secret" /> 
+    <label>Nom : </label> 
+    <!-- name = "secret" -->
+    <input type="text" name="nom">
+    <br>
+    <label>Prénom : </label>
+    <input type="text" name="nom"><br /> 
+    <!-- name = "prenom" -->
+    <input type="submit" name="ok" value="OK"> 
+    </form>
+
+<input type="hidden" Name="nom" value= "<?= $nom; ?>" /> 
+<!-- name = "nom" -->
+<label>Prénom : </label>
+<!-- name = "prenom" -->
+<input type="text" name="nom"><br /> 
+<input type="submit" name="ok" value="OK"> 
+</body>
+</html>
