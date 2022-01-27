@@ -7,6 +7,9 @@
     <title>Page 1</title>
 </head>
 <body>
+<!-- Cas general -->
+<br>
+<h1>Cas general</h1>
     <form action="saisie.php" method="POST">
         <label >Nom : </label>
         <input type="text" name="nom">
@@ -14,6 +17,20 @@
         <label>Prénom : </label>
         <input type="text" name="prenom"><br />
         <input type="submit" name="ok" value="OK">
-       </form>  
+    </form> 
+
+<!-- Cas particuliers -->
+<!-- 2 zone portent le meme nom -->  
+<!-- C’est tout simplement la dernière zone rencontrée dans le formulaire qui fixe la valeur. -->
+<br>
+<h1>2 zone portent le meme nom</h1>
+<form action="saisie.php" method="POST">
+    <label >Nom : </label>
+    <input type="text" name="nom">
+    <br>
+    <label>Prénom : </label>
+    <input type="text" name="nom"><br />
+    <input type="submit" name="ok" value="OK">
+   </form>
 </body>
 </html>
